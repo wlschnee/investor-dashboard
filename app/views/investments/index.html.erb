@@ -1,7 +1,10 @@
 <ul class="list-unstyled">
 <% @investments.each do |investment| %>
-  <h4><li><%= link_to investment.project.title, investment_path(investment.id) %><br></li></h4>
-  Total investment: <%= investment.total_investment_amount %><br>
-  Borrower: <%= investment.borrower.name %>
+  <div class="col-xs-4">
+    <h4><li><%= link_to investment.project.title, investment_path(investment.id) %><br></li></h4>
+    <strong>Total investment: </strong><%= investment.total_investment_amount %><br>
+    <strong>Borrower: </strong><%= investment.borrower.name %><br>
+    <strong>Description: </strong><p><%= investment.project.description %></p>
+  </div>
 <% end %>
 </ul>
