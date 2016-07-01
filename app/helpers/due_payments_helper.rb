@@ -1,0 +1,2 @@
+module DuePaymentsHelper
+end

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-06-29
+  amount: 1
+  investment: one
+
+two:
+  date: 2016-06-29
+  amount: 1
+  investment: two
