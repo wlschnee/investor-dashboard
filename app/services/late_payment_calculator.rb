@@ -37,11 +37,11 @@ class LatePaymentCalculator
       if made_payment.actual_remaining_principle < due_payment.expected_remaining_principle
         lateness = made_payment.payment_date - due_payment.payment_date
         case lateness
-        when 0..10
+        when 0..14
           @late_payments_categorized[:"0-14"] << made_payment
           due_payment.category = "0-14"
           break
-        when 11..20
+        when 15..29
           @late_payments_categorized[:"15-29"] << made_payment
           due_payment.category = "15-29"
           break
